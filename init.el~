@@ -1,0 +1,14 @@
+;; use cask to manage my package
+
+(require 'cask "/usr/local/share/emacs/site-lisp/cask/cask.el")
+(cask-initialize)
+
+
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
+
+
+
+(require 'init-editing)
+(require 'init-ui)
