@@ -1,8 +1,6 @@
 (source "gnu"   "http://elpa.emacs-china.org/gnu/")
 (source "melpa" "http://elpa.emacs-china.org/melpa/")
 
-
-
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")
@@ -12,7 +10,6 @@
 (depends-on "f")
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
-(depends-on "helm")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
 (depends-on "magit")
