@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "package-legacy" "package-legacy.el" (22750
-;;;;;;  25858 0 0))
+;;;### (autoloads nil "package-legacy" "package-legacy.el" (22779
+;;;;;;  62466 0 0))
 ;;; Generated autoloads from package-legacy.el
 
 (defvar package-enable-at-startup t "\
@@ -67,7 +67,7 @@ The list is displayed in a buffer named `*Packages*'.
 ;;;***
 
 ;;;### (autoloads nil nil ("cask-bootstrap.el" "cask-cli.el" "cask-pkg.el"
-;;;;;;  "cask.el") (22750 25858 0 0))
+;;;;;;  "cask.el") (22779 62466 0 0))
 
 ;;;***
 

@@ -13,14 +13,13 @@
 ;; smart-pararens
 (require 'smartparens-config)
 (smartparens-global-mode t)
-
+(add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 
 ;; invoke visual-line-mode
 (dolist (hook '(text-mode-hook))
   (add-hook hook
 	    '(lambda ()
 	       (visual-line-mode 1))))
-
 
 (global-set-key (kbd "M-/") 'hippie-expand)
 
@@ -33,7 +32,6 @@
 
 (require 'popwin)
 (popwin-mode t)
-
 
 
 (defun wanghui/kill-line ()
