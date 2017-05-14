@@ -10,6 +10,7 @@
 
 (add-to-list 'default-frame-alist
              '(font . "Source Code Pro-14"))
+(load-theme 'monokai t)
 
 (setq inhibit-splash-screen t)
 (setq-default cursor-type 'bar)
@@ -76,19 +77,8 @@
   (when (memq wanghui/major-mode wanghui/prog-mode)
     (wanghui/fonts-setup-program)))
 
-(defcustom after-buffer-change-hook nil
-  "Hooks that are run after helm-mini"
-  :type 'hook)
 
-(define-advice helm-mini (:around(fn) helm-mini-after)
-  (funcall fn)
-  (run-hooks 'after-buffer-change-hook)
-  )
-
-
-(add-hook 'text-mode-hook 'wanghui/fonts-setup-text)
-(add-hook 'prog-mode-hook 'wanghui/fonts-setup-program)
-(add-hook 'after-buffer-change-hook 'wanghui/check-current-major-mode-and-set-fonts)
+(add-hook 'window-configuration-change-hook 'wanghui/check-current-major-mode-and-set-fonts)
 
 
 (toggle-frame-maximized)
